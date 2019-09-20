@@ -38,15 +38,19 @@ function handleShipAnimation() {
 }
 //Makes rectangle that moves diagonally across screen
 function RenderNewObject(context) {
-
-    context.strokeRect(SQUARE_COORDINATES.x, SQUARE_COORDINATES.y, 60, 60);
+    context.fillRect (SQUARE_COORDINATES.x, 0, 50, randomStuff.x);
+    context.fillRect (SQUARE_COORDINATES.x2, randomStuff.heightOnCanvas, 50, randomStuff.height * 100);
+    if (SQUARE_COORDINATES.x <= 0 || SQUARE_COORDINATES.x2 <= 0){
+      SQUARE_COORDINATES.x = 550;
+      SQUARE_COORDINATES.x2 = 550;
+      howFast.fastOne
+    }
 
 }
 
 function HandleNewObjectMovement() {
-  SQUARE_COORDINATES.x += 1;
-  SQUARE_COORDINATES.y += 1;
-
+  SQUARE_COORDINATES.x -= howFast.fastOne;
+  SQUARE_COORDINATES.x2 -= howFast.fastTwo;
 }
 
 function runGame() {

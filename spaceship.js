@@ -36,7 +36,7 @@ function InitializeSpaceship() {
         y : SPACE_SHIP.y,
     },
     scale : 5,
-    speed : 3,
+    speed : 10,
     initialized : true,
     bullets : []
   };

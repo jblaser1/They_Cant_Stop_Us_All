@@ -29,5 +29,4 @@ var randomStuff = {
 
 var howFast = {
   fastOne : 1,
-  fastTwo : 1
 }

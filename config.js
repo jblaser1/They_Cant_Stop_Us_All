@@ -9,7 +9,7 @@ var GAME = {
 
 var SPACE_SHIP = {
   initialized : false,
-  bullets : [],
+  bullets : [], 
   latest : {
     x : 0,
     y : 0

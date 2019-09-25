@@ -9,7 +9,7 @@ var GAME = {
 
 var SPACE_SHIP = {
   initialized : false,
-  bullets : [], 
+  bullets : [],
   latest : {
     x : 0,
     y : 0
@@ -23,10 +23,15 @@ var SQUARE_COORDINATES = {
 
 var randomStuff = {
   x : Math.floor ((Math.random () * 100) + 50),
-  heightOnCanvas : 300 - Math.floor ((Math.random () * 100) + 50),
-  height : Math.floor ((Math.random () * 100) + 50)
+  heightOnCanvas : 300 - Math.floor ((Math.random () * 100) + 25),
+  height : Math.floor ((Math.random () * 100) + 25)
 };
 
 var howFast = {
   fastOne : 1,
 }
+
+var NEW_OBJECT = {
+  x : 300,
+  y : 150
+};

@@ -40,6 +40,8 @@ function handleShipAnimation() {
 function RenderNewObject(context) {
   //makes center
   context.fillRect(NEW_OBJECT.x,NEW_OBJECT.y,50,50);
+  var center = new IMAGE();
+  center.src = 'naruto.png';
 // makes walls
     context.fillRect (SQUARE_COORDINATES.x, 0, 50, randomStuff.x);
     context.fillRect (SQUARE_COORDINATES.x2, randomStuff.heightOnCanvas, 50, randomStuff.height * 100);
